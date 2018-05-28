@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="ru-RU"><head id="Head"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+<meta name="REVISIT-AFTER" content="1 DAYS">
+<meta name="RATING" content="GENERAL">
+<meta name="RESOURCE-TYPE" content="DOCUMENT">
+<meta content="text/javascript" http-equiv="Content-Script-Type">
+<meta content="text/css" http-equiv="Content-Style-Type">
+
+<!-- Yandex.Metrika counter --> <script type="text/javascript" async="" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/dc.js"></script><script type="text/javascript" async="" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/watch.js"></script><script type="text/javascript"> (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter39449150 = new Ya.Metrika({ id:39449150, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks"); </script><!-- /Yandex.Metrika counter -->
+<title>
+	РТС-тендер - электронная торговая площадка для государственных и муниципальных закупок
+</title><meta id="MetaDescription" name="DESCRIPTION" content="Электронная площадка России - электронные торги по государственному и муниципальному заказу, тендеры в соответствии с 44-ФЗ, 94-ФЗ"><meta id="MetaKeywords" name="KEYWORDS" content="госзакупки, госзаказ, электронные торговые площадки, 44-ФЗ, 94-ФЗ, электронные торги, площадка для закупок по 44-ФЗ, закупки по 44 фз, 44 фз, 44 закупки"><meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW"><link href="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/css.css" type="text/css" rel="stylesheet"><script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/js" type="text/javascript"></script>     
+        
+			    <script type="text/javascript">
+			      var _gaq = _gaq || [];
+			      _gaq.push(['_setAccount', 'UA-22959243-14']);
+			      _gaq.push(['_trackPageview']);
+			      _gaq.push(['_setDomainName', '.rts-tender.ru']);
+			 
+			      (function() {
+				    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			      })();
+			    </script>
+        
+		  <link rel="SHORTCUT ICON" href="https://www.rts-tender.ru/Portals/0/favicon.ico?ver=2015-01-16-153211-180" type="image/x-icon"></head>
+<body id="Body">
+    
+    <form method="post" action="/" id="Form" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input name="StylesheetManager_TSSM" id="StylesheetManager_TSSM" value="" type="hidden">
+<input name="ScriptManager_TSM" id="ScriptManager_TSM" value=";;AjaxControlToolkit, Version=4.1.7.1213, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e:en-US:5e024d16-0df4-4402-9405-a3808b4211f4:ea597d4b:b25378d2" type="hidden">
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="HtE7EzDYdtv3Ho5LrceKsiMYamPljNl3xojICSzveJK4MRP7kklFX7/Bv7dW/lTAogoB7Zg16OpOQopbG4DaN/bXXg5ZfATQ3Wk18Tglkb7pGEk10cMCOyo3NWVAo6MqLM+xAmdXV5DqZdR7gElmwJ/WP6oy3weA614wBfy4OQf3UXcMNNA2IO3q1Wh0U4w3PBccrcbeXozCBmnrPeFtWAdF4oFFrMsoza4dT8QdYr8g1+12FcJr3wEjWjKCVFth/mlJkC9lEGnrHFqoii7p67UNH0Lii69YbqbHFHmQFPguPgstWeDwU5pJhgTbdd2Ag//ClnpXBsCl1hSX9OE5JLFZwc+jCKMyGrkNOsoCYwVM90/n8lFItr8kV5a2NyATm+CHLaHL5WjjMg+sPyd60YM+7FMlMu6VJOqWEvxCx3maLk92TiTYjDvhQcY9Sp+O2G3i7yucJv6bu6372jrAb0t+8yHoucwoZ8nDlf93L4EEICW1kkhUXuWIdV5mNhn4Veq5Sw==" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['Form'];
+if (!theForm) {
+    theForm = document.Form;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/WebResource.axd" type="text/javascript"></script>
+
+<script type="text/javascript">if (!window.DDRjQuery) {if (window.jQuery && (jQuery.fn.jquery>="1.3")) DDRjQuery=jQuery; else document.write(unescape('%3Cscript src="jQuery" type="text/javascript"%3E%3C/script%3E'));}</script><script type="text/javascript">if (!window.DDRjQuery) DDRjQuery=jQuery.noConflict(true);</script><script type="text/javascript">if (!(window.DDR)) document.write(unescape('%3Cscript src="/DesktopModules/DDRMenu/js/DDRMenu.js" type="text/javascript"%3E%3C/script%3E'));</script><script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/DDRMenu.js" type="text/javascript"></script><script type="text/javascript">if (!(window.DDR && window.DDR.Menu && window.DDR.Menu.Providers && window.DDR.Menu.Providers.DNNMenu)) document.write(unescape('%3Cscript src="/DesktopModules/DDRMenu/DNNMenu/DNNMenu.js" type="text/javascript"%3E%3C/script%3E'));</script><script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/DNNMenu.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+var __cultureInfo = {"name":"ru-RU","numberFormat":{"CurrencyDecimalDigits":2,"CurrencyDecimalSeparator":",","IsReadOnly":false,"CurrencyGroupSizes":[3],"NumberGroupSizes":[3],"PercentGroupSizes":[3],"CurrencyGroupSeparator":" ","CurrencySymbol":"₽","NaNSymbol":"NaN","CurrencyNegativePattern":8,"NumberNegativePattern":1,"PercentPositivePattern":1,"PercentNegativePattern":1,"NegativeInfinitySymbol":"-∞","NegativeSign":"-","NumberDecimalDigits":2,"NumberDecimalSeparator":",","NumberGroupSeparator":" ","CurrencyPositivePattern":3,"PositiveInfinitySymbol":"∞","PositiveSign":"+","PercentDecimalDigits":2,"PercentDecimalSeparator":",","PercentGroupSeparator":" ","PercentSymbol":"%","PerMilleSymbol":"‰","NativeDigits":["0","1","2","3","4","5","6","7","8","9"],"DigitSubstitution":1},"dateTimeFormat":{"AMDesignator":"","Calendar":{"MinSupportedDateTime":"\/Date(-62135596800000)\/","MaxSupportedDateTime":"\/Date(253402289999999)\/","AlgorithmType":1,"CalendarType":1,"Eras":[1],"TwoDigitYearMax":2029,"IsReadOnly":false},"DateSeparator":".","FirstDayOfWeek":1,"CalendarWeekRule":0,"FullDateTimePattern":"d MMMM yyyy \u0027г.\u0027 H:mm:ss","LongDatePattern":"d MMMM yyyy \u0027г.\u0027","LongTimePattern":"H:mm:ss","MonthDayPattern":"d MMMM","PMDesignator":"","RFC1123Pattern":"ddd, dd MMM yyyy HH\u0027:\u0027mm\u0027:\u0027ss \u0027GMT\u0027","ShortDatePattern":"dd.MM.yyyy","ShortTimePattern":"H:mm","SortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd\u0027T\u0027HH\u0027:\u0027mm\u0027:\u0027ss","TimeSeparator":":","UniversalSortableDateTimePattern":"yyyy\u0027-\u0027MM\u0027-\u0027dd HH\u0027:\u0027mm\u0027:\u0027ss\u0027Z\u0027","YearMonthPattern":"MMMM yyyy","AbbreviatedDayNames":["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],"ShortestDayNames":["Вс","Пн","Вт","Ср","Чт","Пт","Сб"],"DayNames":["воскресенье","понедельник","вторник","среда","четверг","пятница","суббота"],"AbbreviatedMonthNames":["янв","фев","мар","апр","май","июн","июл","авг","сен","окт","ноя","дек",""],"MonthNames":["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь",""],"IsReadOnly":false,"NativeCalendarName":"григорианский календарь","AbbreviatedMonthGenitiveNames":["янв","фев","мар","апр","мая","июн","июл","авг","сен","окт","ноя","дек",""],"MonthGenitiveNames":["января","февраля","марта","апреля","мая","июня","июля","августа","сентября","октября","ноября","декабря",""]},"eras":[1,"наша эра",null,0]};//]]>
+</script>
+
+<script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/Telerik.axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" type="hidden">
+	<input name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" type="hidden">
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="zKLjrc1h2qXnPsTE3wo7YEpumkPIbVXAfrplNv8oaUIFRMSlBe92K0w/dlnoGVrnpBzjxIcM79q3hYDZ6YLUdbfGlRFv/r/kzrGeWyTMru0a24uMoHnovhNpVR0kwrcQTBOaQnSx6k6RHN3YHZ2PLZL3xm09Mn4f2d0OvPHBBn3iZ95ViTiRljIsjQaiOWVxrcRJKg==" type="hidden">
+</div><script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/js_002" type="text/javascript"></script><script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
+//]]>
+</script>
+
+        
+        
+        
+<!--<link rel="stylesheet" href="/portals/_default/skins/otc/Content/css/style.css" />-->
+<link rel="stylesheet" href="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/jquery.css">
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/jquery_003.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/rts_scripts.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/mainMenu.js"></script>
+
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/knockout-3.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/knockout.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/main_page_newsViewModel.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    $( window ).resize(function() {
+				var singleNews = $('.news').eq(0);
+                var news = $('.news').eq(1);
+				var smiAbout = $('*').is($('.news').eq(2)) ? $('.news').eq(2) : null;
+        	    news.parent().height(singleNews.parent().height() - $('#dnn_ctr633_ContentPane').height() - $(".DnnModule-RtsEventCalendar").height() - 10);
+                if(smiAbout != null) {
+					smiAbout.height(news.parent().height()-smiAbout.css('padding-bottom').replace('px','') - smiAbout.css('padding-top').replace('px',''));
+					smiAbout.css('overflow-y','auto');
+				}
+                $('#dnn_ctr632_ModuleContent').height(singleNews.parent().height()-9);
+                if(smiAbout != null) {
+					smiAbout.height($('.mein-row').height() - 49);
+					smiAbout.css('overflow-y','auto');
+				}
+            });
+            
+            $( window ).load(function() {
+			     var news = $('.news').eq(1);
+			     var singleNews = $('.news').eq(0);
+			     var smiAbout = $('*').is($('.news').eq(2)) ? $('.news').eq(2) : null;
+                 $('[class*=list_wrapper]').eq(1).append('<a href="/about/news" class="all-news"><span>Все новости</span></a>');
+                 news.parent().height(singleNews.parent().height() - $(".DnnModule-RtsEventCalendar").height() - 10);
+                 if(smiAbout != null){
+					smiAbout.height(news.parent().height()-smiAbout.css('padding-bottom').replace('px','')- smiAbout.css('padding-top').replace('px',''));
+					smiAbout.css('overflow-y','auto');
+
+
+					smiAbout.parent().height(singleNews.parent().height()-9);
+					smiAbout.height($('.mein-row').height() - 49);
+					smiAbout.css('overflow-y','auto');
+				}
+            });
+		});
+
+		$(document).ready(function() {
+		    $(".main-news-block, .NewsOne_Style_List_Article_SMI").mCustomScrollbar({
+		        scrollButtons:{enable:false},
+                scrollInertia:0
+            });
+		});
+</script>
+
+    <div id="wrapper" class="blockCenter">
+        
+	
+ <div id="header">
+        <div class="header__date">
+	        <script src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/time.js" type="text/javascript"></script>
+	        <script type="text/javascript">
+                function GetLoginCertificateHash() {
+                    return $('#ctl00_hiddenLoginCertificateHash')[0].value;
+                }
+                //var now = new Date(); 
+                //ServerDateTime = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours()+3, now.getUTCMinutes(), now.getUTCSeconds());  
+	        //var ServerDateTime = new Date();
+                $(document).ready(function () {
+              	    //var date = new Date();
+		    var now = new Date(); 
+	            var ServerDateTime = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(),  now.getUTCHours()+3, now.getUTCMinutes(), now.getUTCSeconds());  
+                    startServerDate(ServerDateTime, OnTimerTick);
+                });
+                function OnTimerTick(date) {
+                    $('#currentTime').text(getTimeString(date));
+		    $('#currentDate').text(getDateString(date));
+                }
+            </script>
+            <span class="selected">
+	            <span id="currentTime" style="color:red;">13:27 </span>
+	            <span class="msk-time">
+	            <!--<img src="/portals/_default/skins/RTS/Content/images/css/icon-watch.png" alt="московское время" width="13" height="13" style="vertical-align: initial;">-->
+	            <font color="red"> МСК</font></span>
+	            <span id="currentDate">Четверг 12.04.2018 г.</span>	
+	            <div class="msk-time-title">московское время<div class="angle"></div></div>
+	            <!--<span id="dnn_dnnCURRENTDATE_lblDate" class="SkinObject">12 апреля 2018 г.</span>
+ -->
+            </span> 
+	    </div>
+    <div class="header-table">
+	    <div class="header-table__cell header__logo table-cell__w250">
+		    <a href="https://www.rts-tender.ru/">
+			<!--[if gte IE 9]><!-->
+					<img src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/rts-tender.svg" alt="" width="228" height="99">
+			<!--<![endif]-->
+			<!--[if lte IE 8]>
+				<img src="/portals/_default/skins/RTS/Content/images/css/rts-tender.png" alt="" width="228" height="99"  />
+			<![endif]-->
+			</a>
+	    </div>
+        <div class="header-table__cell header__content">
+            <div class="header-tagline">Современные технологии эффективных закупок </div>
+        </div>
+	    <div class="header-table__cell table-cell__w250 text-right">
+	    
+            <div class="header__authorization">
+                <a href="https://www.rts-tender.ru/login" class="header__authorization_enter">Вход</a>
+            </div>
+	    </div>
+    </div>		
+</div>
+
+
+
+ <!--header -->
+		<div class="menu_main" style="width: 1217px;">			
+			<div id="menu">
+				<script type="text/javascript">
+			DDR.Menu.registerMenu('dnn_dnnNAV_ctldnnNAV', {MenuStyle:"DNNMenu",ControlID:"ctldnnNAV",PathImage:"/Portals/0/",PathSystemImage:"/images/",PathSystemScript:"/controls/SolpartMenu/",IndicateChildImageSub:"breadcrumb.gif",IndicateChildImageRoot:"menu_down.gif",CSSControl:"mainMenu",StyleControlHeight:0,StyleBorderWidth:0,StyleNodeHeight:0,StyleIconWidth:0,StyleFontSize:0,EffectsDuration:0,EffectsShadowStrength:0,ControlOrientation:"Horizontal",ControlAlignment:"Left",ForceDownLevel:"False",MouseOutHideDelay:0,MouseOverDisplay:"Highlight",MouseOverAction:"Expand",ForceCrawlerDisplay:"False",IndicateChildren:true,PopulateNodesFromClient:false});
+		</script><style type="text/css">	#dnn_dnnNAV_ctldnnNAV {		display: none;	}</style><span><span class="mainMenu"><span class="root mi mi0 id95 first" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/auctionsearch"><span style="visibility:hidden">Поиск</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">Поиск</span></span><span class="root mi mi1 id844" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/zakupki-44"><span style="visibility:hidden">44-ФЗ</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">44-ФЗ</span></span><span class="root mi mi2 id847" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/zakupki-223"><span style="visibility:hidden">223-ФЗ</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">223-ФЗ</span></span><span class="root mi mi3 id2022" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/corp"><span style="visibility:hidden">Коммерческие закупки</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">Коммерческие закупки</span></span><span class="root mi mi4 id1335" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/zakupki-615"><span style="visibility:hidden">615-ПП РФ</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">615-ПП РФ</span></span><span class="root mi mi5 id1611" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/market"><span style="visibility:hidden">РТС-маркет</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">РТС-маркет</span></span><span class="root mi mi6 id2041" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="http://msp.rts-tender.ru/"><span style="visibility:hidden">МСП</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">МСП</span></span><span class="root mi mi7 id850" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/property-sales"><span style="visibility:hidden">Имущество</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">Имущество</span></span><span class="root mi mi8 id853" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/tariffs/platform-44-tariffs"><span style="visibility:hidden">Тарифы</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">Тарифы</span></span><span class="root mi mi9 id271 last" style="position: relative;"><a style="position: absolute; display: block; border: 0px none; padding: 0px; margin: 0px; top: 0px; left: 0px; bottom: 0px; right: 0px; text-decoration: none; background: transparent url(&quot;/images/spacer.gif&quot;) repeat scroll 0% 0%;" href="https://www.rts-tender.ru/about/news"><span style="visibility:hidden">О компании</span></a><span class="icn"></span><span class="txt" style="cursor: pointer;">О компании</span></span></span></span>
+			</div>	
+	    </div>
+
+        
+        <!--
+        <div id="search" class="span3 pull-right">
+            <span id="dnn_dnnSearch_ClassicSearch">
+    
+    
+    <span class="searchInputContainer" data-moreresults="See More Results" data-noresult="No Results Found">
+        <input name="dnn$dnnSearch$txtSearch" type="text" maxlength="255" size="20" id="dnn_dnnSearch_txtSearch" class="NormalTextBox" autocomplete="off" placeholder="Search..." />
+        <a class="dnnSearchBoxClearText" title="Clear search text"></a>
+    </span>
+    <a id="dnn_dnnSearch_cmdSearch" class="SearchButton" href="javascript:__doPostBack(&#39;dnn$dnnSearch$cmdSearch&#39;,&#39;&#39;)">Search</a>
+</span>
+
+
+<script type="text/javascript">
+    $(function() {
+        if (typeof dnn != "undefined" && typeof dnn.searchSkinObject != "undefined") {
+            var searchSkinObject = new dnn.searchSkinObject({
+                delayTriggerAutoSearch : 400,
+                minCharRequiredTriggerAutoSearch : 2,
+                searchType: 'S',
+                enableWildSearch: true,
+                cultureCode: 'ru-RU',
+                portalId: -1
+                }
+            );
+            searchSkinObject.init();
+            
+            
+            // attach classic search
+            var siteBtn = $('#dnn_dnnSearch_SiteRadioButton');
+            var webBtn = $('#dnn_dnnSearch_WebRadioButton');
+            var clickHandler = function() {
+                if (siteBtn.is(':checked')) searchSkinObject.settings.searchType = 'S';
+                else searchSkinObject.settings.searchType = 'W';
+            };
+            siteBtn.on('change', clickHandler);
+            webBtn.on('change', clickHandler);
+            
+            
+        }
+    });
+</script>
+
+        </div>
+        -->
+        <div id="contentWraper">
+            <div id="container">
+                <div id="dnn_BannerPane" class="BannerPane"><div class="DnnModule DnnModule-Rts_SingleBanner DnnModule-2557"><a name="2557"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr2557_dnnTITLE_titleLabel" class="TitleH2"> </span>
+
+
+</h2>
+    <div id="dnn_ctr2557_ContentPane"><!-- Start_Module_2557 --><div id="dnn_ctr2557_ModuleContent" class="DNNModuleContent ModRtsSingleBannerC">
+	
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/knockout-3.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/knockout.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/jquery_002.js"></script>
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/jquery.js"></script>
+
+<script>
+    $(document).ready(function () {
+        var carouselVM = function () {
+            return new function () {
+                var self = this;
+                self.sliders = ko.observableArray([]);
+                self.sliders([{"ModuleId":2557,"RTS_SlideId":4,"RTS_SlideTitle":"РТС-ТЕНДЕР – УЧАСТНИК ФОРУМА «ГОСЗАКАЗ – ЗА ЧЕСТНЫЕ ЗАКУПКИ»","RTS_SlideText":"Цифровизация закупочной отрасли, особенности рынка корпоративных закупок, новые возможности поиска подходящих закупок, новые сервисы в имущественных торгах и много другое в докладах наших экспертов","RTS_SlideLink":"https://forum-goszakaz.ru/","RTS_ImageLink":"/Portals/0/Files/library/marketing/slider/slide4gos18.jpg","SortOrder":1},{"ModuleId":2557,"RTS_SlideId":1,"RTS_SlideTitle":"ОБУЧЕНИЕ РАБОТЕ В СФЕРЕ ЗАКУПОК ","RTS_SlideText":"Вебинары, семинары, конференции, экспресс-курсы, партнерские проекты","RTS_SlideLink":"/trainings","RTS_ImageLink":"/Portals/0/Files/banners-main/slide1.jpg","SortOrder":2},{"ModuleId":2557,"RTS_SlideId":2,"RTS_SlideTitle":"ШИРОКИЙ ФУНКЦИОНАЛ ДЛЯ ЗАКАЗЧИКОВ ","RTS_SlideText":"Любые виды закупок, многоуровневая система аналитики, автоматический расчет НМЦ, экспертиза закупок, отдельный портал закупок заказчика, закупки малого объема, проверка поставщиков","RTS_SlideLink":"/customer-services","RTS_ImageLink":"/Portals/0/Files/banners-main/slide3.jpg","SortOrder":3},{"ModuleId":2557,"RTS_SlideId":3,"RTS_SlideTitle":"ПОДДЕРЖКА ПОСТАВЩИКОВ НА ВСЕХ ЭТАПАХ УЧАСТИЯ В ЗАКУПКАХ ","RTS_SlideText":"Электронная подпись, поиск выгодных закупок, юридическая поддержка, проверка субподрядчика, расчет и заказ доставки товаров, расчетное обслуживание, любые финансовые продукты","RTS_SlideLink":"/supplier-services","RTS_ImageLink":"/Portals/0/Files/banners-main/slide2.jpg","SortOrder":4}]);
+                return {
+                    sliders: self.sliders
+                };
+            };
+        };
+
+        var vm = carouselVM();
+        ko.applyBindings(vm, document.getElementById('RtsSingleBanner__Content'));
+
+        $(".banner-wrap").jcarousel({
+            scroll: 1,
+            wrap: 'circular',
+            animation: 1000,
+            auto: 1,
+            items: ".banner-item"
+        })
+		.jcarouselAutoscroll({
+		    interval: 10000,
+		    target: '+=1',
+		    autostart: true
+		});
+        $('.jcarousel-pag')
+            .on('jcarouselpagination:active', 'a', function () {
+                $(this).addClass('active');
+            })
+            .on('jcarouselpagination:inactive', 'a', function () {
+                $(this).removeClass('active');
+            })
+            .jcarouselPagination({
+                'item': function (page, carouselItems) {
+                    return '<a href="#' + page + '"></a>';
+                },
+                'carousel': $('.jcarousel')
+            });
+        $(window).resize(function () {
+            var $image = $('.banner-image');
+            if ($image.length > 0) {
+                var minWidth = $image.css('min-width') !== 'none' ? $image.css('min-width').replace(/[^-\d\.]/g, '') : 1170;
+                var maxWidth = $image.css('max-width') !== 'none' ? $image.css('max-width').replace(/[^-\d\.]/g, '') : 1600;
+                var windowWidth = $(window).width();
+                $('.banner-item').width($('.slider-banners-block').width());
+
+                if (windowWidth > minWidth) {
+                    var bgPosition = windowWidth < maxWidth ? windowWidth - maxWidth : 0;
+                    $image.css('background-position', bgPosition + 'px center');
+                } else {
+                    $image.css('background-position', minWidth - maxWidth + 'px center');
+                }
+            }
+        });
+    });
+</script>
+
+<div id="RtsSingleBanner__Content">
+    <div class="slider-banners-block">
+            <div class="jcarousel-pag" data-jcarouselpagination="true"><a href="#1" class=""></a><a href="#2" class=""></a><a href="#3" class="active"></a><a href="#4"></a></div>
+            <div class="banner-wrap jcarousel" data-jcarousel="true" data-jcarouselautoscroll="true">
+                <ul data-bind="foreach: sliders" style="left: -2454px; top: 0px;">
+                    <li class="banner-item" style="width: 1227px;">
+                        <div class="banner-image" data-bind="style: { 'backgroundImage': 'url(\'' + $data.RTS_ImageLink + '\')' }" style="background-image: url(&quot;/Portals/0/Files/library/marketing/slider/slide4gos18.jpg&quot;); background-position: -333px center;">
+                        </div>
+                        <div class="banner-text">
+                            <div class="banner-title">
+                              <span data-bind="text: $data.RTS_SlideTitle">РТС-ТЕНДЕР – УЧАСТНИК ФОРУМА «ГОСЗАКАЗ – ЗА ЧЕСТНЫЕ ЗАКУПКИ»</span>
+                            </div>
+                            <div class="banner-content">
+                             <span data-bind="text: $data.RTS_SlideText">Цифровизация
+ закупочной отрасли, особенности рынка корпоративных закупок, новые 
+возможности поиска подходящих закупок, новые сервисы в имущественных 
+торгах и много другое в докладах наших экспертов</span>
+                            </div>
+                            <div class="banner-link">
+                                <a data-bind="attr: { href: $data.RTS_SlideLink }" target="_self" href="https://forum-goszakaz.ru/">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li class="banner-item" style="width: 1227px;">
+                        <div class="banner-image" data-bind="style: { 'backgroundImage': 'url(\'' + $data.RTS_ImageLink + '\')' }" style="background-image: url(&quot;/Portals/0/Files/banners-main/slide1.jpg&quot;); background-position: -333px center;">
+                        </div>
+                        <div class="banner-text">
+                            <div class="banner-title">
+                              <span data-bind="text: $data.RTS_SlideTitle">ОБУЧЕНИЕ РАБОТЕ В СФЕРЕ ЗАКУПОК </span>
+                            </div>
+                            <div class="banner-content">
+                             <span data-bind="text: $data.RTS_SlideText">Вебинары, семинары, конференции, экспресс-курсы, партнерские проекты</span>
+                            </div>
+                            <div class="banner-link">
+                                <a data-bind="attr: { href: $data.RTS_SlideLink }" target="_self" href="https://www.rts-tender.ru/trainings">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li class="banner-item" style="width: 1227px;">
+                        <div class="banner-image" data-bind="style: { 'backgroundImage': 'url(\'' + $data.RTS_ImageLink + '\')' }" style="background-image: url(&quot;/Portals/0/Files/banners-main/slide3.jpg&quot;); background-position: -333px center;">
+                        </div>
+                        <div class="banner-text">
+                            <div class="banner-title">
+                              <span data-bind="text: $data.RTS_SlideTitle">ШИРОКИЙ ФУНКЦИОНАЛ ДЛЯ ЗАКАЗЧИКОВ </span>
+                            </div>
+                            <div class="banner-content">
+                             <span data-bind="text: $data.RTS_SlideText">Любые
+ виды закупок, многоуровневая система аналитики, автоматический расчет 
+НМЦ, экспертиза закупок, отдельный портал закупок заказчика, закупки 
+малого объема, проверка поставщиков</span>
+                            </div>
+                            <div class="banner-link">
+                                <a data-bind="attr: { href: $data.RTS_SlideLink }" target="_self" href="https://www.rts-tender.ru/customer-services">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                
+                    <li class="banner-item" style="width: 1227px;">
+                        <div class="banner-image" data-bind="style: { 'backgroundImage': 'url(\'' + $data.RTS_ImageLink + '\')' }" style="background-image: url(&quot;/Portals/0/Files/banners-main/slide2.jpg&quot;); background-position: -333px center;">
+                        </div>
+                        <div class="banner-text">
+                            <div class="banner-title">
+                              <span data-bind="text: $data.RTS_SlideTitle">ПОДДЕРЖКА ПОСТАВЩИКОВ НА ВСЕХ ЭТАПАХ УЧАСТИЯ В ЗАКУПКАХ </span>
+                            </div>
+                            <div class="banner-content">
+                             <span data-bind="text: $data.RTS_SlideText">Электронная
+ подпись, поиск выгодных закупок, юридическая поддержка, проверка 
+субподрядчика, расчет и заказ доставки товаров, расчетное обслуживание, 
+любые финансовые продукты</span>
+                            </div>
+                            <div class="banner-link">
+                                <a data-bind="attr: { href: $data.RTS_SlideLink }" target="_self" href="https://www.rts-tender.ru/supplier-services">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+</div>
+
+
+</div><!-- End_Module_2557 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                <div id="dnn_ContentPane"><div class="DnnModule DnnModule-RtsMainSearch DnnModule-626"><a name="626"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr626_dnnTITLE_titleLabel" class="TitleH2"> </span>
+
+
+</h2>
+    <div id="dnn_ctr626_ContentPane"><!-- Start_Module_626 --><div id="dnn_ctr626_ModuleContent" class="DNNModuleContent ModRtsMainSearchC">
+	
+<script type="text/javascript">
+    /*function button_click(objTextBox, objBtnID) {
+        if (window.event.keyCode == 13) {
+            document.getElementById(objBtnID).focus();
+            document.getElementById(objBtnID).click();
+        }
+    };
+    */
+    function ShowProgress() {
+        setTimeout(function () {
+            var modal = $('<div />');
+            modal.addClass("modal");
+            $('body').append(modal);
+            var loading = $(".loading");
+            loading.show();
+            var top = Math.max($(window).height() / 2 - loading[0].offsetHeight / 2, 0);
+            var left = Math.max($(window).width() / 2 - loading[0].offsetWidth / 2, 0);
+            loading.css({ top: top, left: left });
+        }, 200);
+    };
+</script>
+<!--[if lt IE 10 ]>
+<script type="text/javascript">
+$( document ).ready(function() {
+    var input = document.getElementsByTagName('input');
+    var cls = "placeholdr";
+    for (var i=0; i < input .length; i++) {  
+	    var t = input[i];	
+	    var txt = t.getAttribute("placeholder");
+	    if (!!txt){
+		t.className = t.value.length == 0 ? t.className+" "+cls : t.className; // add class
+                t.value = t.value.length > 0 ? t.value : txt; // if no value found
+	    }
+	    t.onfocus = function() { // on focus
+            this.className = this.className.replace(cls);
+            this.value = this.value == this.getAttribute("placeholder") ? "" : this.value;
+            }
+	    t.onblur = function() { // on focus out 
+            if (this.value.length == 0) {
+                this.value = this.getAttribute("placeholder");
+                this.className = this.className+" "+cls; // add class
+            }
+        }
+    }
+});
+
+
+    $(function(){
+        $('#dnn_ctr626_View_search_btn').click(function(){
+            var input = document.getElementsByTagName('input');
+            var cls = "placeholdr";
+            for (var i=0; i < input .length; i++) {  
+	            var t = input[i];	
+	            var txt = t.getAttribute("placeholder");
+	            if (!!txt){
+		        //console.log('value:'+t.value);
+                        //console.log('placeholder:'+txt);
+		        if (t.value == txt){t.value = ""};
+	            }
+            }    
+        });
+    });
+
+</script>   
+<![endif]--> 
+<div id="content">
+    <div class="loading" align="center">
+        <img src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/loading.gif" alt="">
+    </div>
+    <div class="search-wrap">
+        <div class="search-block">
+            <input name="dnn$ctr626$View$search_field" id="dnn_ctr626_View_search_field" class="search-block-input" placeholder="Поиск по номеру извещения" onkeydown="if(event.which || event.keyCode){if ((event.which == 13) || (event.keyCode == 13)) {document.getElementById('dnn_ctr626_View_search_btn').click();return false;}} else {return true}; " type="text">
+            <a onclick="javascript:ShowProgress();" id="dnn_ctr626_View_search_btn" class="search-btn" href="javascript:__doPostBack('dnn$ctr626$View$search_btn','')">НАЙТИ</a>
+        </div>
+    </div>
+</div>
+
+</div><!-- End_Module_626 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                <div class="row-fluid">
+                    <div class="clear"></div><table class="main-table-content">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">
+			                        <div id="dnn_leftPane" class="leftPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-1247"><a name="1247"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr1247_dnnTITLE_titleLabel" class="TitleH2"> </span>
+
+
+</h2>
+    <div id="dnn_ctr1247_ContentPane"><!-- Start_Module_1247 --><div id="dnn_ctr1247_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr1247_HtmlModule_lblContent" class="Normal">
+	<div class="services-wrapper">
+<div class="services-big">
+<div class="service-big__row">
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/suppliers/registration/rus-premium">
+<h2><em class="ico ico-clock"></em>Экспресс-аккредитация</h2>
+<div class="service-big__row__item__description">
+Ускоренное получение аккредитации на любой площадке (за 3 часа)
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/mik">
+<h2><em class="ico ico-mik"></em>Модуль исполнения контрактов</h2>
+<div class="service-big__row__item__description">
+Эффективный инструмент для мониторинга и оперативного контроля исполнения контрактов
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/trainings">
+<h2><em class="ico ico-hatdown"></em>Обучение</h2>
+<div class="service-big__row__item__description">
+Полезные знания и образовательные программы в сфере закупок
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/consulting">
+<h2 abp="2055"><em class="ico ico-briefcase"></em>Сопровождение участников закупок</h2>
+<div class="service-big__row__item__description">
+Профессиональная помощь в организации и участии в закупках
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="http://help.rts-tender.ru/" target="_blank">
+<h2 abp="2055"><em class="ico ico-pc-question"></em>Поддержка</h2>
+<div class="service-big__row__item__description">
+Инструкции по работе на РТС-тендер, база знаний, вопросы-ответы, онлайн-помощник
+</div>
+</a>
+</div>
+</div>
+<div class="service-big__row">
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/digital-signature">
+<h2 abp="2055"><em class="ico ico-ep"></em>Электронная подпись</h2>
+<div class="service-big__row__item__description">
+Электронный сертификат для работы в сфере закупок
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/market/regions">
+<h2><em class="ico ico-trading-platform"></em>Электронные магазины / РТС-маркет</h2>
+<div class="service-big__row__item__description">
+Закупки малого объема различных регионов и муниципальных образований РФ
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="http://forcustomer44.garant.ru/SESSION/PILOT/logout.htm">
+<h2><em class="ico ico-charter"></em>Законодательство</h2>
+<div class="service-big__row__item__description">
+Актуальная база законов и кодексов в сфере закупок
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/contractor_check">
+<h2><em class="ico ico-partner"></em>О контрагенте</h2>
+<div class="service-big__row__item__description">
+Проверка юридических лиц и ИП
+</div>
+</a>
+</div>
+<div class="service-big__row__item">
+<a href="https://www.rts-tender.ru/fin_services">
+<h2><em class="ico ico-bank"></em>Финансовые сервисы</h2>
+<div class="service-big__row__item__description">
+Кредитование обеспечения заявок<br>
+Банковские гарантии онлайн<br>
+Кредитование исполнения контракта<br>
+Факторинг
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- End_Module_1247 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                                </td>
+                            </tr>
+							<tr>
+								<td>
+							        <table class="mein-row">
+                                        <tbody>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <div id="dnn_leftPaneBottom" class="leftPaneBottom"><div class="DnnModule DnnModule-DNN_HTML DnnModule-2534"><a name="2534"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr2534_dnnTITLE_titleLabel" class="TitleH2">Text/HTML</span>
+
+
+</h2>
+    <div id="dnn_ctr2534_ContentPane"><!-- Start_Module_2534 --><div id="dnn_ctr2534_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr2534_HtmlModule_lblContent" class="Normal">
+	<div style="position: relative; height: auto;">
+<div class="rts-news rts-latestNews" id="Rts_LatestNews">
+<!-- ko foreach: news -->
+<a data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/06042018"><img alt="" data-bind="attr: { src: '/Portals/0/' + $data.ArticleImageFolder + '/' + $data.ArticleID + '/' + $data.ArticleImage }" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/tech.jpg"></a>
+<div class="rts-latestNews__item-description">
+<h2 class="rts-latestNews__item-title" data-bind="html: $data.Title">Технические работы в ЕИС 6-7 апреля</h2>
+<div class="rts-latestNews__item-data">
+<span data-bind="html: $data.CleanArticleData">Уведомляем вас, что с 
+22:00 (по МСК) 6 апреля до 12:00 7 апреля в Единой информационной 
+системе (ЕИС) будут проводиться технические работы.</span>
+</div>
+<a data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/06042018"><span>Читать полностью</span></a>
+</div>
+<!-- /ko -->
+</div>
+<div class="modal-loading" style="display: none;"></div>
+<div class="loader" style="text-align: center; display: none; top: 311px; left: 215px;">
+<img alt="" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/loading.gif">
+</div>
+</div>
+</div>
+
+</div><!-- End_Module_2534 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                                                </td>
+                                                <td colspan="2" class="mein_row__centralPanel">
+                                                    <div id="dnn_centerPaneBottom" class="centralPaneBtoom"><div class="DnnModule DnnModule-DNN_HTML DnnModule-2533"><a name="2533"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr2533_dnnTITLE_titleLabel" class="TitleH2">Text/HTML</span>
+
+
+</h2>
+    <div id="dnn_ctr2533_ContentPane"><!-- Start_Module_2533 --><div id="dnn_ctr2533_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr2533_HtmlModule_lblContent" class="Normal">
+	<div style="position: relative; height: auto;">
+<div class="rts-news mCustomScrollbar _mCS_1" id="Rts_News" style="height: 79px;"><div id="mCSB_1" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_1_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+<a href="https://www.rts-tender.ru/about/news" class="rts-news__title">
+НОВОСТИ
+</a>
+<div class="rts-news__content">
+<!-- ko foreach: news -->
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">06.04.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/06042018"><span data-bind="html: $data.Title">Технические работы в ЕИС 6-7 апреля</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">03.04.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/03042018-1"><span data-bind="html: $data.Title">Расширены возможности сервиса рекомендаций для поставщиков на площадке РТС-тендер</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">29.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/03042018-2"><span data-bind="html: $data.Title">В Кургане прошла конференция для заказчиков</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">28.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/280320181"><span data-bind="html: $data.Title">РТС-тендер примет участие в XIV Всероссийском Форуме-выставке «ГОСЗАКАЗ-ЗА честные закупки»</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">28.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/28032018"><span data-bind="html: $data.Title">РТС-тендер
+ стал генеральным партнером VI Всероссийской конференции «Корпоративные 
+закупки 2018: практика применения Закона 223-ФЗ»</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">28.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/270320182"><span data-bind="html: $data.Title">Новый вид аукционов по продаже имущества должников</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">28.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/270320181"><span data-bind="html: $data.Title">Запуск электронных аукционов по пользованию рыбоводным участком</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">27.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/27032018"><span data-bind="html: $data.Title">Введение тарифной системы по имущественным торгам</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">26.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/14032018"><span data-bind="html: $data.Title">Конкурс «Профессионал закупок 2018» в Иркутской области</span></a>
+</div>
+
+<div class="rts-news__item">
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">26.03.2018</span>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/news/26032018"><span data-bind="html: $data.Title">Изменение Регламента и Соглашения о гарантийном обеспечении на площадке РТС-тендер Имущественные торги</span></a>
+</div>
+<!-- /ko -->
+</div>
+<a href="https://www.rts-tender.ru/about/news" class="all-news"><span>Все новости</span></a>
+</div><div id="mCSB_1_scrollbar_vertical" class="mCSB_scrollTools mCSB_1_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_1_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 16px; max-height: 69px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+<div class="modal-loading" style="display: none;"></div>
+<div class="loader" style="text-align: center; display: none; top: 143px; left: 216px;">
+<img alt="" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/loading.gif">
+</div>
+</div>
+</div>
+
+</div><!-- End_Module_2533 --></div>
+	<div class="clear"></div>
+</div>
+</div><div class="DnnModule DnnModule-RtsEventCalendar DnnModule-1359"><a name="1359"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr1359_dnnTITLE_titleLabel" class="TitleH2"> </span>
+
+
+</h2>
+    <div id="dnn_ctr1359_ContentPane"><!-- Start_Module_1359 --><div id="dnn_ctr1359_ModuleContent" class="DNNModuleContent ModRtsEventCalendarC">
+	
+<script type="text/javascript" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/underscore-min.js"></script>
+<div class="event-calendar__wrapper">
+    <h2><a href="https://www.rts-tender.ru/trainings/training-scheduler" class="title-link">ОБУЧЕНИЕ</a></h2>
+    <div id="calendar"><table class="calendar" cellspacing="0" cellpadding="0"><tbody><tr class="header"><td class="navigation navigation__prev">«</td><td colspan="5" class="navigation">Апрель&nbsp;2018</td><td class="navigation navigation__next">»</td></tr><tr><td class="grayed">26</td><td class="grayed">27</td><td class="grayed">28</td><td class="grayed">29</td><td class="grayed">30</td><td class="grayed">31</td><td class="day">1</td></tr><tr><td class="day">2</td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=03.04.2018&amp;dateTo=03.04.2018" title="Семинар: / 44-ФЗ и 223-ФЗ">3</a></td><td class="day">4</td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=05.04.2018&amp;dateTo=05.04.2018" title=": / 223-ФЗ">5</a></td><td class="day">6</td><td class="day">7</td><td class="day">8</td></tr><tr><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day selected">12</td><td class="day">13</td><td class="day">14</td><td class="day">15</td></tr><tr><td class="day">16</td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=17.04.2018&amp;dateTo=17.04.2018" title="Вебинар: / 223-ФЗ">17</a></td><td class="day">18</td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=19.04.2018&amp;dateTo=19.04.2018" title="Семинар: / 44-ФЗ. Вебинар: / 615-ПП РФ">19</a></td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=20.04.2018&amp;dateTo=20.04.2018" title="Вебинар: / Закупки малого объема">20</a></td><td class="day">21</td><td class="day">22</td></tr><tr><td class="day">23</td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=24.04.2018&amp;dateTo=24.04.2018" title="Вебинар: / 44-ФЗ">24</a></td><td class="day">25</td><td class="day"><a href="http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=26.04.2018&amp;dateTo=26.04.2018" title="Семинар: / Закупки малого объема">26</a></td><td class="day">27</td><td class="day">28</td><td class="day">29</td></tr><tr><td class="day">30</td><td class="grayed">1</td><td class="grayed">2</td><td class="grayed">3</td><td class="grayed">4</td><td class="grayed">5</td><td class="grayed">6</td></tr></tbody></table></div>
+</div>
+
+<script type="text/javascript">
+    
+    // Скрипт календарика с возможностью выбора даты
+    var calendar = {};
+
+    // Названия месяцев
+    calendar.monthName = [
+        'Январь', 'Февраль', 'Март', 'Апрель',
+        'Май', 'Июнь', 'Июль', 'Август',
+        'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
+    ];
+
+    // Названия дней недели
+    calendar.dayName = [
+        'ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'ВС'
+    ];
+
+    // Выбранная дата
+    calendar.selectedDate = {
+        'Day': null,
+        'Month': null,
+        'Year': null
+    };
+
+    // ID элемента для размещения календарика
+    calendar.element_id = "";
+
+    // Выбор даты
+    calendar.selectDate = function (day, month, year) {
+        calendar.selectedDate = {
+            'Day': day,
+            'Month': month,
+            'Year': year
+        };
+        calendar.drawCalendar(month, year);
+    }
+
+    // Отрисовка календарика на выбранный месяц и год
+    calendar.drawCalendar = function (month, year) {
+
+        var trainings = [],
+            firstDay = new Date(year, month - 1, 1),
+            lastDay = new Date(year, month, 0),
+            firstDayString = (firstDay.getDate() < 10 ? '0' : '') + firstDay.getDate() + "." + ((firstDay.getMonth() + 1) < 10 ? '0' : '') + (firstDay.getMonth() + 1) + "." + firstDay.getFullYear(),
+            lastDayString = (lastDay.getDate() < 10 ? '0' : '') + lastDay.getDate() + "." + ((lastDay.getMonth() + 1) < 10 ? '0' : '') + (lastDay.getMonth() + 1) + "." + lastDay.getFullYear(),
+            SearchTraining = {
+                ModuleID: 0,
+                LecturerID: 0,
+                TypeID: 0,
+                PlatformID: 0,
+                Audience: 0,
+                Region: 0,
+                DateFrom: firstDayString,
+                DateTo: lastDayString
+            };
+        var request = $.ajax({
+            type: "POST",
+            url: "/DesktopModules/RtsEventCalendar/API/ModuleEventCalendar/GetTrainings",
+            data: SearchTraining,
+            async: false,
+            success: function (result) {
+                return result;
+            },
+            error: function (error) {
+                return [];
+            }
+        });
+        var trainings = [];
+        if (request.status == 200) {
+            trainings = JSON.parse(request.responseText);
+            //trainings = _.map(_.unique(_.pluck(trainings, 'RTS_TrainingDate')), function(item) { return parseInt(item) });
+            trainings = _.map(trainings, function (item) { return { day: parseInt(item.RTS_TrainingDate), tooltip: item.RTS_TTypeName + ": " + item.RTS_PlatformName } });
+        }
+        
+        $table = $("<table>").addClass("calendar").attr({ cellspacing: 0, cellpadding: 0 });
+
+        // Месяц и навигация
+        $trHeader = $("<tr>").addClass("header");
+
+        $tdPrevNav = $("<td>")
+            .addClass("navigation navigation__prev")
+            .html("&laquo;")
+            .on("click", function () {
+                calendar.drawCalendar((month > 1 ? (month - 1) : 12), (month > 1 ? year : (year - 1)));
+            })
+            .appendTo($trHeader);
+
+        $tdCenterNav = $("<td>")
+            .attr({ colspan: 5 })
+            .addClass("navigation")
+            .html(calendar.monthName[(month - 1)] + '&nbsp;' + year)
+            /*.on("click", function () {
+                calendar.drawCalendar(calendar.selectedDate.Month, calendar.selectedDate.Year);
+            })*/
+            .appendTo($trHeader);
+
+        $tdNextNav = $("<td>")
+            .addClass("navigation navigation__next")
+            .html("&raquo;")
+            .on("click", function() {
+                calendar.drawCalendar((month < 12 ? (month + 1) : 1), (month < 12 ? year : (year + 1)));
+            })
+            .appendTo($trHeader);
+        $trHeader.appendTo($table);
+
+        // Шапка таблицы с днями недели
+        $trWeekDays = $("<tr>");
+        for (var i = 0; i < 7; i++) {
+            var $th = $("<th>").text(calendar.dayName[i]);
+            $trWeekDays.appendTo($th);
+        }
+
+        // Количество дней в месяце
+        var total_days = 32 - new Date(year, (month - 1), 32).getDate();
+        // Начальный день месяца
+        var start_day = new Date(year, (month - 1), 1).getDay();
+        if (start_day == 0) { start_day = 7; }
+        start_day--;
+        // Количество ячеек в таблице
+        var final_index = Math.ceil((total_days + start_day) / 7) * 7;
+
+        var day = 1;
+        var index = 0;
+        do {
+            // Начало строки таблицы
+            if (index % 7 == 0) {
+                $tr = $("<tr>");
+            }
+            
+            // Пустые ячейки до начала месяца или после окончания
+            if (index < start_day) {
+                var lastDate = 32 - new Date(year, (month - 2), 32).getDate();
+                var date = lastDate - (start_day - index - 1);
+                $("<td>")
+                    .addClass("grayed")
+                    .text(new Date(year, (month - 2), date).getDate())
+                    .appendTo($tr);
+            }
+            else if ((index >= (total_days + start_day))) {
+                $("<td>")
+                    .addClass("grayed")
+                    .text(new Date(year, month, (index - (total_days + start_day - 1))).getDate())
+                    .appendTo($tr);
+            }
+            else {
+                var class_name = 'day ';
+                // Выбранный день
+                if (calendar.selectedDate.Day == day &&
+                    calendar.selectedDate.Month == month &&
+                    calendar.selectedDate.Year == year) {
+                    class_name += 'selected ';
+                }
+                // Ячейка с датой
+                var listEvent = _.where(trainings, { "day": day });
+                var tooltip = "";
+                _.each(listEvent, function(elem) {
+                    if (tooltip != "") tooltip += '. ';
+                    tooltip += elem.tooltip;
+                });
+                $("<td>")
+                    .addClass(class_name)
+                    .html((tooltip == "") ? day : $("<a>").attr({ href: "http://www.rts-tender.ru/trainings/training-scheduler?dateFrom=" + (day < 10 ? "0" + day : day) + "." + (month < 10 ? "0" + month : month) + "." + year + "&dateTo=" + (day < 10 ? "0" + day : day) + "." + (month < 10 ? "0" + month : month) + "." + year, title: tooltip }).text(day))
+                    .appendTo($tr);
+                day++;
+            }
+            // Конец строки таблицы
+            if (index % 7 == 6) {
+                $tr.appendTo($table);
+            }
+            index++;
+        }
+        while (index < final_index);
+
+        // Вставить таблицу календарика на страницу
+        var el = $("#" + calendar.element_id);
+
+        if (el) {
+            el.html('');
+            el.append($table);
+        }
+
+        $(window).resize();
+    }
+
+    $(document).ready(function () {
+
+
+        calendar.element_id = 'calendar';
+
+        // По умолчанию используется текущая дата
+        calendar.selectedDate = {
+            'Day': new Date().getDate(),
+            'Month': parseInt(new Date().getMonth()) + 1,
+            'Year': new Date().getFullYear()
+        };
+
+        // Нарисовать календарик
+        calendar.drawCalendar(
+          calendar.selectedDate.Month,
+          calendar.selectedDate.Year
+        );
+        $(window).resize();
+
+    });
+</script>
+</div><!-- End_Module_1359 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+								</td>
+								<td class="main-table__rightPane">
+			                        <div id="dnn_rightPane" class="rightPane"><div class="DnnModule DnnModule-DNN_HTML DnnModule-2535"><a name="2535"></a>
+<div class="DNNContainer_Title_h2 SpacingBottom">
+    <h2><span id="dnn_ctr2535_dnnTITLE_titleLabel" class="TitleH2"> </span>
+
+
+</h2>
+    <div id="dnn_ctr2535_ContentPane"><!-- Start_Module_2535 --><div id="dnn_ctr2535_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+	<div id="dnn_ctr2535_HtmlModule_lblContent" class="Normal">
+	<div style="position: relative; height: auto;">
+<div class="rts-news smiAbout mCustomScrollbar _mCS_2" id="Rts_SmiAbout" style="height: 432px;"><div id="mCSB_2" class="mCustomScrollBox mCS-light mCSB_vertical mCSB_inside" style="max-height: none;" tabindex="0"><div id="mCSB_2_container" class="mCSB_container" style="position:relative; top:0; left:0;" dir="ltr">
+<a href="https://www.rts-tender.ru/about/smi" class="rts-news__title">СМИ О НАС</a>
+<div class="rts-news__content">
+<!-- ko foreach: news -->
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">TAdviser</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">05.04.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/04042018"><span data-bind="html: $data.Title">Как и зачем «РТС-тендер» создал «озеро данных» на 200 ТБ</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">Интерфакс-PROЗАКУПКИ</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">04.04.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/05042018"><span data-bind="html: $data.Title">Минфин в апреле подготовит правила работы со спецсчетами при госзакупках</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">РБК</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">03.04.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/03042018"><span data-bind="html: $data.Title">Конкурсы без конкуренции: как госкомпании проводят закупки</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">ФИННОВОСТИ</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">15.03.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/15032018"><span data-bind="html: $data.Title">Участники мобильных закупок в 2 раза чаще используют продукцию Apple</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">Forbes</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">19.02.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/19022018"><span data-bind="html: $data.Title">Цифровая модернизация: от стартапа до единой экосистемы ведения бизнеса</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">Русская планета</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">14.02.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/14022018"><span data-bind="html: $data.Title">«Умные люди - те, кто могут управлять своей жизнью с помощью технологий»</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">Российская газета</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">23.01.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/23012018"><span data-bind="html: $data.Title">Дело за малым. Микропредприятия выходят из тени</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">Финмаркет</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">19.01.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/190120183"><span data-bind="html: $data.Title">Объем госконтрактов с субъектами МСП вырос на 15%</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">Интерфакс-PROЗАКУПКИ</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">19.01.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/1901201812"><span data-bind="html: $data.Title">Объем госконтрактов в 2017г вырос на 13%, до 5,84 трлн руб., контрактов госкомпаний - на 70%, до 30,7 трлн руб. - РТС-тендер</span></a>
+</div>
+
+<div class="rts-news__item">
+<!-- ko ifnot: $data.CustomField === 'none' -->
+<span class="rts-news__custom-field" data-bind="html: $data.CustomField">ПРАЙМ</span>
+<span class="rts-news__dividing-line">|</span>
+<!-- /ko -->
+<span class="rts-news__public-date" data-bind="html: $data.PublishDate">19.01.2018</span>
+<br>
+<a class="rts-news__content-title" data-bind="attr: { href: $data.Url }" href="https://www.rts-tender.ru/about/smi/190120181"><span data-bind="html: $data.Title">"РТС-тендер": Рынок закупок государства и госкомпаний в 2017 г достиг 36,5 трлн руб</span></a>
+</div>
+<!-- /ko -->
+</div>
+</div><div id="mCSB_2_scrollbar_vertical" class="mCSB_scrollTools mCSB_2_scrollbar mCS-light mCSB_scrollTools_vertical" style="display: block;"><div class="mCSB_draggerContainer"><div id="mCSB_2_dragger_vertical" class="mCSB_dragger" style="position: absolute; min-height: 30px; display: block; height: 180px; max-height: 422px; top: 0px;" oncontextmenu="return false;"><div class="mCSB_dragger_bar" style="line-height: 30px;"></div></div><div class="mCSB_draggerRail"></div></div></div></div></div>
+<div class="modal-loading" style="display: none;"></div>
+<div class="loader" style="text-align: center; display: none; top: 311px; left: 93px;">
+<img alt="" src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/loading.gif">
+</div>
+</div>
+</div>
+
+</div><!-- End_Module_2535 --></div>
+	<div class="clear"></div>
+</div>
+</div></div>
+                                    <div id="dnn_rightPaneBottom" class="rightPaneBottom DNNEmptyPane"></div>
+                                </td>
+							</tr>
+                        </tbody>
+                        
+                    </table>
+			    </div>
+                <div class="row-fluid">
+                    
+                    
+                    
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="hFooter"></div>
+        <div id="footer">
+            <div class="blockCenter">
+    <div class="footer__content">
+        <div class="footer__content_menu">
+            <div class="menu_bottom logo">
+                <a href="https://fintender.ru/" target="_blank">
+                    <!--[if gte IE 9]><!-->
+                    <img src="%D0%A0%D0%A2%D0%A1-%D1%82%D0%B5%D0%BD%D0%B4%D0%B5%D1%80%20-%20%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%82%D0%BE%D1%80%D0%B3%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%B4%D0%BB%D1%8F%20%D0%B3%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D1%85%20%D0%B8%20%D0%BC%D1%83%D0%BD%D0%B8%D1%86%D0%B8%D0%BF%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B7%D0%B0%D0%BA%D1%83%D0%BF%D0%BE%D0%BA_files/ft-group-logo.svg" alt="" width="203" height="93">
+                    <!--<![endif]-->
+                    <!--[if lte IE 8]>
+				    <img src="/Portals/_default/Containers/DarkKnightMobile/images/ft-group-logo.png" alt="" width="203" height="93"  />
+			        <![endif]-->
+                </a>
+                <div class="mobile">
+                    <span class="mobile-text">Скачать мобильное приложение для Заказчиков:
+                    </span>
+                    <ul>
+                        <li><a href="https://appsto.re/ru/83qEfb.i" target="_blank"><span class="mobile-icon app-store">Apple</span></a></li>
+                        <li><a href="https://play.google.com/store/apps/details?id=ru.rtstender.app" target="_blank"><span class="mobile-icon google-store">Google</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="menu_bottom menu1">
+                <div class="menu-bottom-name">44-ФЗ</div>
+                <ul>
+                    <li><a href="https://www.rts-tender.ru/zakupki-44/customers-44"><span>Заказчикам</span> </a></li>
+                    <li><a href="https://www.rts-tender.ru/zakupki-44/participants-44"><span>Участникам</span> </a></li>
+                    <li><a href="https://www.rts-tender.ru/tariffs/platform-44-tariffs"><span>Тарифы</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/platform-rules/platform-44"><span>Регламент</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/legislation"><span>Законодательство</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/details/platform-44-details"><span>Реквизиты</span></a></li>
+                </ul>
+            </div>
+            <div class="menu_bottom menu2">
+                <div class="menu-bottom-name">223-ФЗ</div>
+                <ul>
+                    <li><a href="https://www.rts-tender.ru/zakupki-223/customers-223"><span>Заказчикам</span> </a></li>
+                    <li><a href="https://www.rts-tender.ru/zakupki-223/participants-223"><span>Участникам</span> </a></li>
+                    <li><a href="https://www.rts-tender.ru/tariffs/platform-223-tariffs"><span>Тарифы</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/platform-rules/platform-223"><span>Регламент</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/legislation"><span>Законодательство</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/details/platform-223-details"><span>Реквизиты</span></a></li>
+                </ul>
+            </div>
+            <div class="menu_bottom menu3">
+                <div class="menu-bottom-name">Имущество</div>
+                <ul>
+                    <li><a href="https://www.rts-tender.ru/property-sales/property-sailers"><span>Продавцам</span> </a></li>
+                    <li><a href="https://www.rts-tender.ru/property-sales/property-buyers"><span>Покупателям</span> </a></li>
+                    <li><a href="https://www.rts-tender.ru/tariffs/platform-property-sales-tariffs"><span>Тарифы</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/platform-rules/platform-property-sales"><span>Регламент</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/legislation"><span>Законодательство</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/details/platform-property-sales-details"><span>Реквизиты</span></a></li>
+                </ul>
+            </div>
+            <div class="menu_bottom menu4">
+                <div class="menu-bottom-name">О КОМПАНИИ</div>
+                <ul>
+                    <li><a href="https://www.rts-tender.ru/about/contacts"><span>Контакты</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/about/history"><span>История</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/about/partners"><span>Партнёры</span></a></li>
+                    <li><a href="https://www.rts-tender.ru/about/vacancy"><span>Вакансии</span></a></li>
+                    
+                    <li><font color="gray">Сервер: 12.11</font></li>
+                    
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="copy-block">
+            <div class="copy">
+                <span class="footerCopy">© 2000-2018 ООО «РТС-тендер». Все права защищены.</span>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.facebook.com/RTS.tender" target="_blank"><span class="social-icon social-icon1">facebook</span></a></li>
+                    <li><a href="https://vk.com/rtstender" target="_blank"><span class="social-icon social-icon3">vkontakte</span></a></li>
+                    <li><a href="http://www.youtube.com/channel/UCvA114k2xebV4FaaEQaQg1A" target="_blank"><span class="social-icon social-icon7">youtube</span></a></li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+</div>
+
+
+
+ <!--footer -->
+        </div>
+    </div>
+    <script type="text/javascript">
+	    var allNews =  $('.news');
+        allNews.eq(1).addClass('main-news-block').prepend('<!--HEADER-->', '<h2><a href="/about/news" class="title-link">НОВОСТИ</a></h2>');
+        allNews.eq(2).prepend('<!--HEADER SMI-->', '<h2><a href="/about/smi" class="title-link">СМИ О НАС</a></h2>');
+		allNews.eq(2).find('h2+div').wrap('<div class="smi-content"></div>');
+    </script>
+
+
+
+
+
+
+
+
+        <input name="ScrollTop" id="ScrollTop" type="hidden">
+        <input name="__dnnVariable" id="__dnnVariable" autocomplete="off" value="`{`__scdoff`:`1`,`sf_siteRoot`:`/`,`sf_tabId`:`55`}" type="hidden">
+        <input name="__RequestVerificationToken" value="w9cJvrzk2xkNEpMI3SURJW9PuQQ4ICW2f9Mk5iI-tBW4qXvoXrlqVI9YwwQj6P0SOB4dWQ2" type="hidden">
+    </form>
+    <!--CDF(Javascript|/js/dnncore.js)--><!--CDF(Css|/Portals/0/home.css)--><!--CDF(Javascript|/js/dnn.modalpopup.js)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css)--><!--CDF(Css|/Portals/_default/Skins/RTS/skin.css)--><!--CDF(Css|/DesktopModules/Rts_SingleBanner/module.css)--><!--CDF(Css|/DesktopModules/Rts_SingleBanner/module.css)--><!--CDF(Css|/DesktopModules/RtsEventCalendar/module.css)--><!--CDF(Css|/DesktopModules/RtsEventCalendar/module.css)--><!--CDF(Css|/DesktopModules/RtsMainSearch/module.css)--><!--CDF(Css|/DesktopModules/RtsMainSearch/module.css)--><!--CDF(Css|/Portals/0/portal.css)--><!--CDF(Css|/Resources/Search/SearchSkinObjectPreview.css)--><!--CDF(Javascript|/Resources/Search/SearchSkinObjectPreview.js)--><!--CDF(Javascript|/js/dnn.js)--><!--CDF(Javascript|/js/dnn.servicesframework.js)--><!--CDF(Javascript|/Resources/libraries/jQuery/01_09_01/jquery.js)--><!--CDF(Javascript|/Resources/libraries/jQuery-UI/01_11_03/jquery-ui.js)-->
+    
+
+</body></html>
