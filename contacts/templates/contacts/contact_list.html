@@ -1,0 +1,14 @@
+<table class="table">
+   <tr>
+     <td>ФИО</td>
+     <td>Телефон</td>
+     <td>Электронный адрес</td>
+   </tr>
+   {% for elem in contact_list %}
+ <tr>
+   <td>{{elem.fio}}</td>
+   <td>{{elem.phone1}}</td>
+   <td>{{elem.email1}}</td>
+ </tr>
+ {% endfor %}
+ </table>

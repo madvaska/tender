@@ -41,6 +41,12 @@ INSTALLED_APPS = [
     'contacts',
     'contractors',
     'statuses',
+    'applicants',
+    'communication_history',
+    'tender_programs',
+    'tenders',
+    'tenderers',
+    'contractors_users',
 ]
 
 MIDDLEWARE = [
